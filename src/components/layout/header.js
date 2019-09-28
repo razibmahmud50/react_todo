@@ -1,8 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Header(){
     return(
-     <header><h3 style={headerStyle}>Todo item list</h3></header>
+     <header>
+         <h3 style={headerStyle}>Todo item list</h3>
+      <Link to="/">Home</Link>|<Link to="/about">About</Link>
+     </header>
+    
     )
 }
 const headerStyle={
